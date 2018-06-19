@@ -38,6 +38,18 @@ function initMap() {
 var infowindow = new google.maps.InfoWindow({
   content: contentString
 });
+var layer = new google.maps.FusionTablesLayer({
+  query: {
+    select: '\'Geocodable address\'',
+    from:   var layer = new google.maps.FusionTablesLayer({
+    query: {
+      select: '\'Geocodable address\'',
+      from: '1mZ53Z70NsChnBMm-qEYmSDOvLXgrreLTkQUvvg'
+    }
+  });
+  layer.setMap(map);
+  }
+});
     </script>
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
